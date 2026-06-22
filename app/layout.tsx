@@ -12,14 +12,14 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 	return (
 		<html lang="en">
 			<body
-				className={`${interFont.className} ${montserratAlternatesFont.variable} h-screen flex`}>
-				<header className="flex w-1/4 h-screen bg-gray-200">
+				className={`${interFont.className} ${montserratAlternatesFont.variable} h-screen flex overflow-hidden`}>
+				<header className="sticky top-1 flex z-10 w-[25%] h-screen bg-gray-200">
 					<nav className="w-4/5 h-9/10 m-auto bg-gray-300">
 						<div className="flex flex-col py-10">
 							<img
 								src={"/person.png"}
 								alt="main logo img"
-								className="w-[200px] h-auto mx-auto hidden md:block mb-5border-2 border-gray-300 rounded-sm shadow-xl"
+								className="w-50 h-auto mx-auto hidden md:block mb-5border-2 border-gray-300 rounded-sm shadow-xl"
 							/>
 							<Link href={"/"} className="flex flex-col items-center mt-5">
 								<h1 className="text-2xl">Piotr Stęchły</h1>
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 								<Link href={"/"}>Home</Link>
 							</li>
 							<li className="text-lg w-4/5 text-center hover:scale-105 transition-all duration-200">
-								<Link href={"/about"}>AboutMe</Link>
+								<Link href={"/about"}>About</Link>
 							</li>
 							<li className="text-lg w-4/5 text-center hover:scale-105 transition-all duration-200">
 								<Link href={"/site-projects"}>Projects</Link>
@@ -70,7 +70,7 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 						</div>
 					</nav>
 				</header>
-				<main className="w-3/4">{children}</main>
+				<main className="w-[75%] h-screen overflow-auto bg-gray-200">{children}</main>
 			</body>
 		</html>
 	)
