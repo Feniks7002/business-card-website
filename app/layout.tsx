@@ -3,16 +3,13 @@ import "./globals.css"
 import Link from "next/link"
 import { FaInstagram, FaFacebook, FaGithub } from "react-icons/fa"
 import type { RootLayoutPropType } from "./utilites/definitions/type"
-import {
-	interFont,
-	montserratAlternatesFont,
-} from "./utilites/definitions/fonts"
+import {interFont, RobotoFont} from "./utilites/definitions/fonts"
 
 export default function RootLayout({ children }: RootLayoutPropType) {
 	return (
 		<html lang="en">
 			<body
-				className={`${interFont.className} ${montserratAlternatesFont.variable} h-screen flex overflow-hidden`}>
+				className={`${interFont.className} ${RobotoFont.variable} h-screen flex overflow-hidden`}>
 				<header className="sticky top-1 flex z-10 w-[25%] h-screen bg-gray-200">
 					<nav className="w-4/5 h-9/10 m-auto bg-gray-300">
 						<div className="flex flex-col py-10">
@@ -34,10 +31,7 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 								<Link href={"/about"}>About</Link>
 							</li>
 							<li className="text-lg w-4/5 text-center hover:scale-105 transition-all duration-200">
-								<Link href={"/site-projects"}>Projects</Link>
-							</li>
-							<li className="text-lg w-4/5 text-center hover:scale-105 transition-all duration-200">
-								<Link href={"/museum"}>NightMuseum</Link>
+								<Link href={"/projects"}>Projects</Link>
 							</li>
 							<li className="text-lg w-4/5 text-center hover:scale-105 transition-all duration-200">
 								<Link href={"/decybelomierz"}>Decybelomierz</Link>

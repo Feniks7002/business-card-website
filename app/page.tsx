@@ -2,6 +2,14 @@ import { BsCheckLg } from "react-icons/bs"
 import { MdOutlineEmail } from "react-icons/md"
 import { GrLocation } from "react-icons/gr"
 import { MdOutlinePhoneInTalk } from "react-icons/md"
+import { GoDotFill } from "react-icons/go"
+import { MdOutlineMuseum } from "react-icons/md";
+import { AiOutlinePython } from "react-icons/ai";
+import { PiFilmSlate } from "react-icons/pi";
+import { IoCameraOutline } from "react-icons/io5";
+import { FiPrinter } from "react-icons/fi";
+
+import Link from "next/link"
 
 export default function Home() {
 	return (
@@ -16,7 +24,13 @@ export default function Home() {
 						/>
 					</div>
 
-					<div className="w-[50%]">
+					<div className="w-[50%] pl-5">
+						<Link href={"/about"} className="inline-flex">
+							<small className="flex items-center gap-1">
+								<GoDotFill size={8} />
+								About
+							</small>
+						</Link>
 						<h1 className="text-2xl ">I Create Digital Future</h1>
 						<br></br>
 						<p>
@@ -36,7 +50,7 @@ export default function Home() {
 							</li>
 						</ul>
 
-						<div className="flex flex-col items-start w-[90%] mt-[60px] -ml-[150px] px-6 py-7 bg-gray-400">
+						<div className="flex flex-col items-start w-[90%] mt-[60px] -ml-[200px] px-6 py-7 bg-gray-400">
 							<div>
 								<h1 className="text-lg font-medium">Piotr Stęchły</h1>
 								<p className="text-xs">Prawie student:)</p>
@@ -63,58 +77,82 @@ export default function Home() {
 
 			<span className="w-[85%] h-[4px] bg-gray-200"></span>
 
-			<section className="flex items-center justify-center w-[85%] h-[900px] bg-gray-300">
-				<div className="flex justify-center w-[80%] h-[75%]">
-					<div className="w-[50%] flex">
-						<img
-							src={"/person.png"}
-							alt="User in big picture"
-							className="w-100 mx-auto"
-						/>
+			<section className="w-[85%] h-[900px] bg-gray-300">
+				<div className="p-10 w-full h-full">
+					<div className="flex flex-col w-full h-[10%] gap-2 px-6">
+						<Link href={"/projects"} className="inline-flex">
+							<small className="flex items-center gap-1">
+								<GoDotFill size={8} />
+								Projects
+							</small>
+						</Link>
+						<h1 className="text-3xl">My own projects</h1>
 					</div>
 
-					<div className="w-[50%]">
-						<h1 className="text-2xl ">I Create Digital Future</h1>
-						<br></br>
-						<p>
-							Quisque convallis lacinia est et volutpat the interdum miss
-							velitan venenatis odio fringilla ut mauris tincidun the molin
-							lunon conva lacinia est et volutpa interdum ectus velican
-							venenatis odio mis theme fringilla utam non ante conseuation.
-						</p>
-						<br></br>
-						<ul className="flex flex-col gap-3">
-							<li className="flex items-center gap-2">
-								<BsCheckLg size={20} />I believe in forward-thinking design
-							</li>
-							<li className="flex items-center gap-2">
-								<BsCheckLg size={20} />
-								Design in the quis egestas sode viventan
-							</li>
-						</ul>
-
-						<div className="flex flex-col items-start w-[90%] mt-[60px] -ml-[150px] px-6 py-7 bg-gray-400">
-							<div>
-								<h1 className="text-lg font-medium">Piotr Stęchły</h1>
-								<p className="text-xs">Prawie student:)</p>
+					<ul className="p-5 h-[85%] grid grid-cols-3 grid-rows-2 gap-12">
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								<MdOutlineMuseum size={67}/>
 							</div>
-							<span className="w-4/5 h-0.5 mb-2 mt-4 bg-gray-300"></span>
-							<ul className="flex flex-col gap-1">
-								<li className="flex items-center text-sm gap-2">
-									<MdOutlineEmail />
-									48+ 676767677
-								</li>
-								<li className="flex items-center text-sm gap-2">
-									<GrLocation />
-									pjoter67@67.com
-								</li>
-								<li className="flex items-center text-sm gap-2">
-									<MdOutlinePhoneInTalk />
-									localization
-								</li>
-							</ul>
-						</div>
-					</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">LateNight</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								<AiOutlinePython size={67}/>
+							</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">Python games</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								<IoCameraOutline size={67}/>
+							</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">Film maker</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								<PiFilmSlate size={67}/>
+							</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">TeLOwizja</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								<FiPrinter size={67}/>
+							</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">Vplotter</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
+							<div className="mt-[25px]">
+								icsize={67}on
+							</div>
+							<div className="flex flex-col items-center gap-2">
+								<h1 className="text-3xl text-center">title</h1>
+								<p className="text-center">description</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<span className="w-[85%] h-[4px] bg-gray-200"></span>
+
+			<section className="w-[85%] h-[900px] bg-gray-300">
+				<div>
+					<h1>Decybelomierz</h1>
 				</div>
 			</section>
 		</div>
