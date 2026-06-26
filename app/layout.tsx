@@ -64,7 +64,9 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 						</div>
 					</nav>
 				</header>
-				<main className="w-[75%] h-screen overflow-auto bg-gray-200">{children}</main>
+				<main className="w-[75%] h-screen overflow-auto bg-gray-200">
+					{children}
+				</main>
 			</body>
 		</html>
 	)

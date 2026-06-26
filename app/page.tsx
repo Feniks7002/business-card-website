@@ -10,7 +10,6 @@ import { IoCameraOutline } from "react-icons/io5";
 import { FiPrinter } from "react-icons/fi";
 import { GiSoundWaves } from "react-icons/gi";
 
-
 import Link from "next/link"
 
 export default function Home() {
@@ -33,7 +32,7 @@ export default function Home() {
 								About
 							</small>
 						</Link>
-						<h1 className="text-2xl ">I Create Digital Future</h1>
+						<h1 className="text-2xl ">I Create My Own Future</h1>
 						<br></br>
 						<p>
 							Quisque convallis lacinia est et volutpat the interdum miss
@@ -153,8 +152,8 @@ export default function Home() {
 			<span className="w-[85%] h-[4px] bg-gray-200"></span>
 
 			<section className="w-[85%] h-[900px] bg-gray-300">
-				<div className="w-full h-full p-10">
-					<div className="text-start mt-10">
+				<div className="w-full h-full p-15">
+					<div className="h-[10%] text-start">
 						<Link href={"/decybelomierz"}>
 							<small className="flex items-center gap-1 mb-1">
 								<GoDotFill size={8} />
@@ -164,24 +163,24 @@ export default function Home() {
 						<h1 className="text-3xl">The Grand Project</h1>
 					</div>
 
-					<ul className="grid grid-cols-3 grid-rows-1 gap-4 mt-[50px]">
+					<ul className="h-[90%] grid grid-cols-3 grid-rows-1 gap-4">
 						<li className="flex flex-col items-center">
 							<img 
-								src="person.png" 
+								src={"person.png"} 
 								alt="Each section of project" 
 								className="h-125"
 							/>
 						</li>
 						<li className="flex flex-col items-center">
 							<img 
-								src="person.png" 
+								src={"person.png"} 
 								alt="Each section of project" 
 								className="h-125"
 							/>
 						</li>
 						<li className="flex flex-col items-center">
 							<img 
-								src="person.png" 
+								src={"person.png"} 
 								alt="Each section of project" 
 								className="h-125"
 							/>
