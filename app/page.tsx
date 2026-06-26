@@ -8,6 +8,8 @@ import { AiOutlinePython } from "react-icons/ai";
 import { PiFilmSlate } from "react-icons/pi";
 import { IoCameraOutline } from "react-icons/io5";
 import { FiPrinter } from "react-icons/fi";
+import { GiSoundWaves } from "react-icons/gi";
+
 
 import Link from "next/link"
 
@@ -86,7 +88,7 @@ export default function Home() {
 								Projects
 							</small>
 						</Link>
-						<h1 className="text-3xl">My own projects</h1>
+						<h1 className="text-3xl">All My Projects</h1>
 					</div>
 
 					<ul className="p-5 h-[85%] grid grid-cols-3 grid-rows-2 gap-12">
@@ -137,10 +139,10 @@ export default function Home() {
 						</li>
 						<li className="flex flex-col items-center gap-5 bg-gray-400 hover:scale-105 hover:bg-white transition-all duration-350 rounded-lg hover:rounded-none cursor-pointer">
 							<div className="mt-[25px]">
-								icsize={67}on
+								<GiSoundWaves size={67} />
 							</div>
 							<div className="flex flex-col items-center gap-2">
-								<h1 className="text-3xl text-center">title</h1>
+								<h1 className="text-3xl text-center">Decybelomierz</h1>
 								<p className="text-center">description</p>
 							</div>
 						</li>
@@ -151,8 +153,40 @@ export default function Home() {
 			<span className="w-[85%] h-[4px] bg-gray-200"></span>
 
 			<section className="w-[85%] h-[900px] bg-gray-300">
-				<div>
-					<h1>Decybelomierz</h1>
+				<div className="w-full h-full p-10">
+					<div className="text-start mt-10">
+						<Link href={"/decybelomierz"}>
+							<small className="flex items-center gap-1 mb-1">
+								<GoDotFill size={8} />
+								Decybelomierz
+							</small>
+						</Link>
+						<h1 className="text-3xl">The Grand Project</h1>
+					</div>
+
+					<ul className="grid grid-cols-3 grid-rows-1 gap-4 mt-[50px]">
+						<li className="flex flex-col items-center">
+							<img 
+								src="person.png" 
+								alt="Each section of project" 
+								className="h-125"
+							/>
+						</li>
+						<li className="flex flex-col items-center">
+							<img 
+								src="person.png" 
+								alt="Each section of project" 
+								className="h-125"
+							/>
+						</li>
+						<li className="flex flex-col items-center">
+							<img 
+								src="person.png" 
+								alt="Each section of project" 
+								className="h-125"
+							/>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</div>
