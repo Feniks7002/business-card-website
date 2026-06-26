@@ -19,7 +19,7 @@ export default function RootLayout({ children }: RootLayoutPropType) {
 								className="w-50 h-auto mx-auto hidden md:block mb-5border-2 border-gray-300 rounded-sm shadow-xl"
 							/>
 							<Link href={"/"} className="flex flex-col items-center mt-5">
-								<h1 className="text-2xl">Piotr Stęchły</h1>
+								<h1 className="text-2xl">Piotr Student</h1>
 								<p className="text-sm">Prawie student:)</p>
 							</Link>
 						</div>

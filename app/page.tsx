@@ -52,7 +52,7 @@ export default function Home() {
 
 						<div className="flex flex-col items-start w-[90%] mt-[60px] -ml-[200px] px-6 py-7 bg-gray-400">
 							<div>
-								<h1 className="text-lg font-medium">Piotr Stęchły</h1>
+								<h1 className="text-lg font-medium">Piotr Student</h1>
 								<p className="text-xs">Prawie student:)</p>
 							</div>
 							<span className="w-4/5 h-0.5 mb-2 mt-4 bg-gray-300"></span>
