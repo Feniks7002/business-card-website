@@ -1,3 +1,12 @@
 export default function ProjectsPage() {
-    return <h1>ProjectsPage</h1>
+	return (
+		<main className="w-full h-full">
+			<div>
+				<img src={"/person.png"} alt="" />
+			</div>
+			<div>
+				<img src={"/person.png"} alt="" />
+			</div>
+		</main>
+	)
 }
