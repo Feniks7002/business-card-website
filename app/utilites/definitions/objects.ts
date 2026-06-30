@@ -1,10 +1,9 @@
-import { MdDescription, MdOutlineMuseum } from "react-icons/md"
+import { MdDescription, MdOutlineMuseum, MdOutlineEmail } from "react-icons/md"
 import { AiOutlinePython } from "react-icons/ai"
 import { PiFilmSlate } from "react-icons/pi"
 import { IoCameraOutline } from "react-icons/io5"
 import { FiPrinter } from "react-icons/fi"
 import { GiSoundWaves } from "react-icons/gi"
-import { MdOutlineEmail } from "react-icons/md"
 import { GrLocation } from "react-icons/gr"
 import { MdOutlinePhoneInTalk } from "react-icons/md"
 import { FaInstagram, FaFacebook, FaGithub } from "react-icons/fa"
@@ -50,12 +49,12 @@ export const projectCards = [
 ]
 
 export const projectIcons = [
-	{ href: "/", title: "Project One" },
-	{ href: "/", title: "Project Two" },
-	{ href: "/", title: "Project Three" },
-	{ href: "/", title: "Project Four" },
-	{ href: "/", title: "Project Five" },
-	{ href: "/", title: "Project Six" },
+	{ icon: {name: MdOutlineMuseum, size: 100}, href: "/", title: "Project One" },
+	{ icon: {name: AiOutlinePython, size: 100}, href: "/", title: "Project Two" },
+	{ icon: {name: IoCameraOutline, size: 100}, href: "/", title: "Project Three" },
+	{ icon: {name: PiFilmSlate, size: 100}, href: "/", title: "Project Four" },
+	{ icon: {name: FiPrinter, size: 100}, href: "/", title: "Project Five" },
+	{ icon: {name: GiSoundWaves, size: 100}, href: "/", title: "Project Six" },
 ]
 
 export const contact = [

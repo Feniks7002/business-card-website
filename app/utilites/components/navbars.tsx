@@ -52,20 +52,18 @@ export function ProjectNavbar() {
 			<div className="h-[20%] flex items-center justify-center">
 				<h1 className="text-4xl">Here Are All My Projects Enjoy:)</h1>
 			</div>
-			<nav className="h-[80%] flex items-center justify-between gap-4">
-				{projectIcons.map((project) => (
+			<nav className="h-[80%] flex items-center justify-center gap-4 px-10">
+				{projectIcons.map((item) => (
 					<div
-						key={project.title}
+						key={item.title}
 						className="group relative overflow-hidden rounded-xl">
-						<Link href={project.href} className="block relative">
-							<img
-								src={"/person.png"}
-								alt={project.title}
-								className="w-[200px] h-auto object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-35"
-							/>
+						<Link href={item.href} className="block relative">
+							<div className="w-[200px] h-[150px] flex items-center justify-center transition duration-500 group-hover:scale-110 group-hover:opacity-30">
+								<item.icon.name size={item.icon.size} className="block" />
+							</div>
 							<div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/40 overflow-hidden">
 								<span className="translate-y-8 opacity-0 text-white text-sm font-semibold transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-									{project.title}
+									{item.title}
 								</span>
 							</div>
 						</Link>
