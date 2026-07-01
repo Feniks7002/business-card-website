@@ -7,7 +7,7 @@ import {
 } from "../definitions/objects"
 import Link from "next/link"
 
-export function Section1() {
+export function SectionAbout() {
 	return (
 		<section className="flex items-center justify-center w-[85%] h-[800px] mt-[100px] bg-gray-300">
 			<div className="flex justify-center w-[80%] h-[75%]">
@@ -66,7 +66,7 @@ export function Section1() {
 	)
 }
 
-export function Section2() {
+export function SectionProjects() {
 	return (
 		<section className="w-[85%] h-[900px] bg-gray-300">
 			<div className="p-10 w-full h-full">
@@ -100,7 +100,7 @@ export function Section2() {
 	)
 }
 
-export function Section3() {
+export function SectionDecybelomierz() {
 	return (
 		<section className="w-[85%] h-[900px] bg-gray-300">
 			<div className="w-full h-full p-15">

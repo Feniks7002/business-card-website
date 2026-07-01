@@ -28,7 +28,7 @@ export const projectCards = [
 	},
 	{
 		icon: { name: IoCameraOutline, size: 67 },
-		title: "Film maker",
+		title: "Video maker",
 		description: "description",
 	},
 	{
@@ -49,12 +49,12 @@ export const projectCards = [
 ]
 
 export const projectIcons = [
-	{ icon: {name: MdOutlineMuseum, size: 100}, href: "/", title: "Project One" },
-	{ icon: {name: AiOutlinePython, size: 100}, href: "/", title: "Project Two" },
-	{ icon: {name: IoCameraOutline, size: 100}, href: "/", title: "Project Three" },
-	{ icon: {name: PiFilmSlate, size: 100}, href: "/", title: "Project Four" },
-	{ icon: {name: FiPrinter, size: 100}, href: "/", title: "Project Five" },
-	{ icon: {name: GiSoundWaves, size: 100}, href: "/", title: "Project Six" },
+	{ icon: {name: MdOutlineMuseum, size: 100}, href: "/projects/late-night", title: "Late Night" },
+	{ icon: {name: AiOutlinePython, size: 100}, href: "/projects/python-games", title: "Python Games" },
+	{ icon: {name: IoCameraOutline, size: 100}, href: "/projects/video-maker", title: "Video maker" },
+	{ icon: {name: PiFilmSlate, size: 100}, href: "/projects/telowizja", title: "TeLOwizja" },
+	{ icon: {name: FiPrinter, size: 100}, href: "/projects/vplotter", title: "Vplotter" },
+	{ icon: {name: GiSoundWaves, size: 100}, href: "/projects/decybelomierz", title: "Decybelomierz" },
 ]
 
 export const contact = [

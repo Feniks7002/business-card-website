@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { GrProjects } from "react-icons/gr"
+import { GoDotFill } from "react-icons/go"
 import { projectIcons, mediaIcons, headlines } from "../definitions/objects"
 
 export function RootNavbar() {
@@ -49,8 +51,17 @@ export function RootNavbar() {
 export function ProjectNavbar() {
 	return (
 		<header className="h-[30%] bg-gray-300 sticky top-1 z-10 p-5">
-			<div className="h-[20%] flex items-center justify-center">
-				<h1 className="text-4xl">Here Are All My Projects Enjoy:)</h1>
+			<div className="h-[20%] flex flex-col items-center">
+				<div className="flex items-center gap-1">
+					<GoDotFill size={10} />
+					<p>Projects</p>
+				</div>
+				<div className="flex items-center gap-5">
+					<h1 className="text-4xl">All My Projects</h1>
+					<Link href={"/projects"}>
+						<GrProjects size={40} />
+					</Link>
+				</div>
 			</div>
 			<nav className="h-[80%] flex items-center justify-center gap-4 px-10">
 				{projectIcons.map((item) => (
